@@ -1,0 +1,51 @@
+1. Add(x,y):
+              if x > y:
+                             large = x
+                             small = y
+              elseif y > x:
+                             large = y
+                             small = x
+              else:
+                             return x * 2
+              difference = small - (Roundup_to_nearest_10(large) - large)
+              return Roundup_to_nearest_10(large) + difference
+
+2. ninja {
+              PartOfGroup: True,
+              MartialArts: True,
+              Sneaky: True,
+              Weapons: {"ninja_star", "katana", "poison"},
+              Skill_Sneak: 20,
+              Skill_Fighting: 14,
+}
+
+pirate {
+              PartOfGroup: True,
+              CannonOperator: True,
+              SeaLegs: True,
+              Weapons: {"cannon", "rapier", "rum_bottle"},
+              Skill_Fighting: 12,
+              Skill_Arrg: 20,
+}
+
+They're both part of an organized group and they both fight when they have to. They also, depending on the situation, both work outside of the law.
+
+3. Bananas could be described as a collection of the same object but those objects have no relation to one another other than they are the same object. Banana trees could be described as a collection of collections with all of the collections being connected to/ relying on each other.
+
+4. Complied languages tend to run faster than interpreted languages. Interpreted languages compile code that is platform independent. Compilers are not allowed to finish compilation if error occur which can be useful in ensuring that the code is major error free before running. Interpreted languages will run until they hit an error that causes the execution to fail. This can be useful in debugging because you can fix errors that prevent execution and, at the same time, ensure that your programming logic is producing the expected outputs. Compiled languages should be used when you are writing a resource intensive software application or system. Interpreted languages are better for less resource intensive uses such as user interfaces or automation scripts.
+
+5. Source code is a human readable programming language that is compiled or assembled into an executable computer program. Source code can be used to manipulate data, software, or hardware. Assembly code is also a human readable programing language but it is generally used for lower level programming like interaction directly with the computer hardware. Machine code is the computer readable code that the computer uses to execute commands. Source code/ assembly code is turned into machine code before the computer executes the command. Technically, it can be human readable IF you have enough binary knowledge. 
+
+6. days_to_birthday (month, day){
+              if year is LeapYear:
+                             totalDays = {1: 31, 2: 29, 3: 31, 4: 30, 5:21, 6:30, 7:31, 8: 31, 9: 30, 10:31, 11: 30, 12:31}
+              else:
+                             totalDays= {1: 31, 2: 28, 3: 31, 4: 30, 5:21, 6:30, 7:31, 8: 31, 9: 30, 10:31, 11: 30, 12:31}
+              for x < (month -1):
+                             days += totalDays[x]
+              return currentDate() - (days+day)
+
+7. tempC2F (cDegrees) {
+              return ((cDegrees*(9/5))+32)
+tempF2C (fDegrees) {
+              return ((fDegrees - 32)*(5/9))
