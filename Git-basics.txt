@@ -1,0 +1,10 @@
+1. git clone https://github.com/Getkablue/GetkaCS
+
+2. Viewed the History tab on the assignment to find the password: P33P33H33H33
+
+3. Went to "Your Repositories" under my profile and selected New
+
+4. Clicked on Fork, under the main GetkaCS page, and selected Create a New Fork. Selected the Assignment 0 - Git Basics.md in my new fork and added my name. Then I clicked on Pull Requests, New Pull Request to make the request with my edits. 
+
+5. I was able to create the new branch by selecting View all Branches and hitting New Branch, but I wasn't sure what "push it to your fork as a separate branch from main/master" meant. 
+
