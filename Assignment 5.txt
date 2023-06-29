@@ -1,0 +1,53 @@
+1A The purpose of the private access specifier is to tell the program that those variables are only visible to the class and not to the rest of the code. The constructor assigns the private variables values so that they can be used freely within the scope of the class. The output would be 50. 
+
+2 class Student {
+	private:
+		std::string name;
+		int age;
+		std::string major;
+	public:
+		Student(std::string n, int a, std::string m) {
+			name = n;
+			age = a;
+			major = m; 
+		}
+		displayDetails() {
+			std::cout << "The student's name is: " << name << ". Their age is :" << age << ". They are majoring in: " << major << "." << std::endl; 
+		}
+
+3. class BankAccount {
+	private:
+		std::string accountNumber;
+		double balance;
+	public:
+		BankAccount() {
+			accountNumber = '';
+			balance = 0;
+		}
+		deposit(std::sendNumber, double depAmount) {
+			if (sendNumber == accountNumber) {
+				balance += depAmount;
+			}
+			else {
+				std::cout << "Wrong Account Number; Try again!" << std::endl;
+			}
+		}
+		withdraw(std::removeNumber, double withAmouth) {
+			if (removeNumber == accountNumber) {
+				if (withAmount <= balance) {
+					balance -= withAmount;
+					std::cout << "You withdrew: << withAmount << " your new account balance is " << balance << "." << std::endl;
+				}
+				else {
+					std::cout << "Insufficient funds. Withdraw request rejected." << std::endl;
+				}
+			}
+			else {
+				std::cout << "Wrong Account Number; Try again!" << std::endl;
+			}
+		}
+			
+}
+
+4. The output of the program is Model: Toyota Camry, Year: 2022. Object copying is setting the attributes of the second object to the same values as the first object. So in this sense when we say Car car2 = car1, we are saying that the attributes model and year are the same between car1 and car2 at first. A struct is a data type that only holds attributes with values whereas a class can have attributes with values and its own set of functions. You would want to use a struct when you are going to be creating a bunch of objects with similar attributes but you don't necessarily need to perform operations on those attributes within the data type. 
+			
