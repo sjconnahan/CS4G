@@ -1,0 +1,9 @@
+1. Inside main: b: 30 a: 10 c: 40 Inside someFunction: b:20 a:10
+2. Scope is basically which parts of the program can see which variables. Some variables can be seen by every part of the program whereas there are variables that only exist to specific parts of the program and other parts don't know that variable is around. 
+3. a= global, b (both of them) = local c = local
+4. No.
+5. Yes
+6. I would say the local variable (or the variable that is farestest inside of the nest). 
+7. An error will be thrown. Probably something along the lines of that varable doesn't exist. 
+8. Make it global. 
+9. You can reuse names, it also makes it simpler to follow. Local variables disappear, basically, once the function is finished running. So you have to keep track of local variables for a shorter amount of time. Global variables can add complexity because it may change multiple times throughout the life of a program which increases the possibility for errors. 
