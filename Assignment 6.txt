@@ -1,0 +1,57 @@
+1a Pass by value is when you operate on the value of a variable but not on the variable itself. Where as pass by reference, you are working on the actual variable itself. 
+
+1b You would choose pass-by-value anytime you want to retain the variable's original value but still want to operate on that variable's value. For example, if you want to calculate the circumference of a circle, you would want the value of radius to stay the same but you need to use that value in the circumference calculation. You would use pass-by-reference in the case where you were writing a program to track how much your plant has grown in the past month. At the end of the month, you would want to replace the height of the plant with the new height. 
+
+1C I would think that with pass by value new memory needs to be allocated for the values whereas with pass by reference the memory was already allocated when the variable was declared. 
+
+2 #include <iostream>
+
+void swapNumbers(int& a, int& b) {
+	int swap = a;
+	a = b;
+	b = swap;
+}
+
+int main() {
+	int a = 4;
+	int b = 5;
+	swapNumbers(a, b);
+	std::cout << "The value of a is: " << a << " and the value of b is: " << b << std::endl;
+	return 0;
+}
+
+3A A pointer is a object that represents the memory address of an object.
+3B. I think that dereferencing a pointer is kind of like going to the memory address and taking the data that lives there. 
+3C. Basically, you would use a pointer when writing a C program and you want to pass-by-reference which isn't allowed in C. 
+
+4. #include <iostream>
+
+void cubeNumber(int& a) {
+	a = (a * a * a)
+}
+
+int main() {
+	int a = 4;
+	cubeNumber(a, b);
+	std::cout << "The cubed value of a is: " << a << std::endl;
+	return 0;
+}
+
+5A. Basically, this is where we as the programmer are manually allocating memory for data.
+5B. The new keyword first allocates the memory for the data type and then assigns data to that allocated memory by instantiating a variable. 
+5C. It removes the data and tells the operating system to stop allocating that space in memory. 
+
+6 #include <iostream> 
+
+int * createArray(int a){
+	int arr [5] = new int[5];
+	return int* ptr = arr;
+}
+
+7A. A memory leak is when memory is allocated for a program and never released. 
+B. By using the delete function on any dynamically allocated memory. 
+
+8A I actually don't think there is a memory leak. 
+8B. Yea. If temp = data, and data is a pointer to array, then isn't the code releasing the memory address of array twice? 
+8C. I don't think there is a memory leak. 
+8D. Maybe delete [] is for a more complexe data type like an array to make sure all of the data is removed and memory released and delete is for more simple data types like integers. 	
